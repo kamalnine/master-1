@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>master website</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="m.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="vijay">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="master%20logo.jpeg">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                     <li><a href="#">home</a></li>
+                     <li><a href="#">promo</a></li>
+                     <li><a href="#">teaser</a></li>
+                     <li><a href="#">trailer</a></li>
+                     <li><a href="#">about</a></li>
+                </ul>
+                <button type="button" class="btn">sign up</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="movie-name">
+            <small>Ilayathalapathy vijay presents</small>
+            <h1><b>MASTER</b></h1>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icons">
+                 <i class="fa fa-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="button">
+            <a href="#" class="btn">download</a>
+        </div>
+    </div>
+    <script>
+        var show=document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right="0";
+        }
+          function closeMenu(){
+            show.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

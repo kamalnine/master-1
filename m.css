@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.vijay{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("master background.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.logo img{
+    width: 180px;
+    top: 4%;
+    left: 5%;
+    position: absolute;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    float: right;
+    margin-right: 5px;
+}
+.nav-links ul li{
+    list-style: none;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.nav-links ul li a{
+    color: yellow;
+    font-size: 200%;
+    text-decoration: none;
+} 
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: black;
+    margin: auto;
+    display: block;
+    transition: 0.6s ease;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul li a:hover{
+    color: black;
+    background: transparent;
+    transition: 0.6s ease;
+}
+.btn{
+    float: right;
+    top: 3%;
+    left: 93%;
+    position: absolute;
+    color: white;
+    background: transparent;
+    border: 1px solid yellow;
+    border-radius: 18px;
+}
+.nav-links .btn{
+    padding: 10px 30px;
+}
+.movie-name{
+    top: 40%;
+    left: 10%;
+    position: absolute;
+    color: darkgoldenrod;
+}
+.movie-name h1{
+    font-size: 600%;
+    letter-spacing: 19px;
+}
+.movie-name small{
+    font-size: 120%;
+}
+.vertical-bar{
+  
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    position: absolute;
+}
+.search-icons{
+    width: 80px;
+    height: 60%;
+}
+.search-icons .fa{
+    color: white;
+    margin: 50px 30px;
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+}
+.social-icons{
+    width: 80px;
+    height: 35%;
+    position: absolute;
+    background:yellow;
+    
+}
+.social-icons .fa{
+    font-size: 30px;
+    background: transparent;
+    margin: 50px 30px;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+.button{
+       top: 55%;
+    left: 10%;
+    position: absolute;
+   
+    border-radius: 18px;
+    
+    
+    
+}
+.btn{color:darkgoldenrod;
+    text-decoration: none;
+    font-size: 20px;
+    margin: auto;
+    padding: 8px 25px;
+}
+@media(max-width:700px){
+    .vertical-bar{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .movie-name{
+    text-align: left;
+        top: 60%;
+    }
+    .movie-name h1{
+        font-size: 300%;
+    
+    }
+    .movie-name small{
+        font-size: 100%;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    
+    . nav-links .btn{
+       position: absolute;
+    }
+    .button{
+        width: 10px;
+        position: absolute;
+        top: 75%;
+    
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: white;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+        
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align:left;
+        z-index: 2;
+        transition: 0.6s ease;
+    }
+    .btn{
+        top: 60%;
+        position: absolute;
+        left: 10%;
+    }
+    .nav-links ul li a:hover{
+        color: white;
+        background:transparent;
+        transition: 0.6s ease;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        display: block;
+        margin: auto;
+        transition: 0.6s ease;
+        background: yellow;
+        
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+}
